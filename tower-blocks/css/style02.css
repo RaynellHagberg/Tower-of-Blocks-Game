@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 html, body {
-  margin: 0;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  font-family: 'Comfortaa', cursive;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*font-family: 'Comfortaa', cursive;*/
+    font-family: 'Roboto Slab', serif;
 }
 
 #container {
@@ -22,7 +24,7 @@ html, body {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  color: #333344;
+  color: floralwhite;
   -webkit-transform: translatey(-200px) scale(1);
           transform: translatey(-200px) scale(1);
 }
@@ -52,9 +54,10 @@ html, body {
   transition: opacity 0.5s ease, transform 0.5s ease;
   transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
   opacity: 0;
-  -webkit-transform: translatey(-50px);
-          transform: translatey(-50px);
-  color: #333344;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+          
+  color: aliceblue;
 }
 
 #container .game-over h2 {
@@ -82,10 +85,10 @@ html, body {
   opacity: 0;
   -webkit-transform: translatey(-50px);
           transform: translatey(-50px);
-  border: 3px solid #333344;
+  border: 3px double floralwhite;
   padding: 10px 20px;
   background-color: transparent;
-  color: #333344;
+  color: floralwhite;
   font-size: 30px;
 }
 
@@ -99,6 +102,7 @@ html, body {
   transition: opacity 0.5s ease, transform 0.5s ease;
   transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
   opacity: 0;
+  color: floralwhite;
 }
 
 #container #instructions.hide {
