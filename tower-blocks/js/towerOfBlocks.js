@@ -61,16 +61,6 @@ var Stage = /** @class */ (function () {
         this.softLight = new THREE.AmbientLight(0xffffff, 0.5);
         this.scene.add(this.softLight);
 
-        //var light = new THREE.DirectionalLight(0xFFFFFF, 0.8, 1000);
-        //light.position.set(0, 0, 10);
-        //var light2 = new THREE.DirectionalLight(0xFFFFFF, 0.7, 1000);
-        //light2.position = camera.position;
-        //var ambientLight = new THREE.AmbientLight(0x222222);
-
-        //scene.add(light);
-        //scene.add(light2);
-        //scene.add(ambientLight);
-
         window.addEventListener('resize', function () { return _this.onResize(); });
         this.onResize();
     }
@@ -146,10 +136,8 @@ var Block = /** @class */ (function () {
             shading: THREE.FlatShading,
             shininess: 10,
             //wireframe: true,
-            wireframeLinewidth: 20 // default is 1, and according to three.js docs: 
-                                   // "Due to limitations of the OpenGL Core Profile with the WebGL renderer on most platforms
-                                   // linewidth will always be 1 regardless of the set value."
         });
+        
         this.mesh = new THREE.Mesh(geometry, this.material);
         this.mesh.position.set(this.position.x, this.position.y + (this.state == this.STATES.ACTIVE ? 0 : 0), this.position.z);
         if (this.state == this.STATES.ACTIVE) {
